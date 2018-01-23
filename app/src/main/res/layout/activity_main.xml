@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.thai_sanscript.thaisanscript.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:menu="@menu/bottom_nav_menu"/>-->
+
+    <com.bigscreen.iconictabbar.view.IconicTabBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:barBackground="@color/white"
+        app:tabDefaultColor="@color/textColor"
+        app:tabFromMenu="@menu/menu_bottom_bar"
+        app:tabSelectedColor="@color/colorPrimary" />
+
+
+</RelativeLayout>
