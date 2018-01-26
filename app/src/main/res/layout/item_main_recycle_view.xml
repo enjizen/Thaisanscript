@@ -1,40 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageView
         android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:src="@mipmap/ic_launcher"
-        />
+        android:layout_height="250dp">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_item_main_recycle_view"
+        android:paddingRight="@dimen/padding_right_item_main_recycle_view">
+
         <TextView
-            android:textColor="@android:color/white"
             android:id="@+id/tv_title"
+            style="@style/SanscriptTextView.White.Large"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="การทำงาน"
+            android:textStyle="bold" />
 
         <TextView
-            android:textColor="@android:color/white"
             android:id="@+id/tv_title_detail"
+            style="@style/SanscriptTextView.White.Small"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold" />
 
         <TextView
-            android:textColor="@android:color/white"
             android:id="@+id/tv_subtitle_detail"
+            style="@style/SanscriptTextView.White.Smaller"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-
-
+    </android.support.v4.widget.NestedScrollView>
 
 </RelativeLayout>

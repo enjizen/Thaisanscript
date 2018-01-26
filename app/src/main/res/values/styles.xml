@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -11,6 +11,174 @@
     <style name="CustomTitleTextAppearance">
         <item name="android:textSize">23sp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SanscriptTextView">
+        <item name="fontPath">font/Sri Sury Wongse.otf</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+
+    <style name="SanscriptTextView.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SanscriptTextView.White.ExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.White.ExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.White.ExtraExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.White.Large">
+        <item name="android:textSize">@dimen/default_text_size_large</item>
+    </style>
+
+    <style name="SanscriptTextView.White.Small">
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+    </style>
+
+    <style name="SanscriptTextView.White.Smaller">
+        <item name="android:textSize">@dimen/default_text_size_smaller</item>
+    </style>
+
+    <style name="SanscriptTextView.White.Smaller.Dp">
+        <item name="android:textSize">@dimen/default_text_size_smaller_dp</item>
+    </style>
+
+    <style name="SanscriptTextView.White.ExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_small</item>
+    </style>
+
+    <style name="SanscriptTextView.White.ExtraExtraExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_small</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey">
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.ExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.ExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.ExtraExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.Large">
+        <item name="android:textSize">@dimen/default_text_size_large</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.Small">
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.Smaller">
+        <item name="android:textSize">@dimen/default_text_size_smaller</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.Smaller.Dp">
+        <item name="android:textSize">@dimen/default_text_size_smaller_dp</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.ExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_small</item>
+    </style>
+
+    <style name="SanscriptTextView.DarkGrey.ExtraExtraExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_small</item>
+    </style>
+
+
+    <style name="SanscriptTextView.light_blue">
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.ExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.ExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.ExtraExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.Large">
+        <item name="android:textSize">@dimen/default_text_size_large</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.Small">
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.Smaller">
+        <item name="android:textSize">@dimen/default_text_size_smaller</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.Smaller.Dp">
+        <item name="android:textSize">@dimen/default_text_size_smaller_dp</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.ExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_small</item>
+    </style>
+
+    <style name="SanscriptTextView.light_blue.ExtraExtraExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_small</item>
+    </style>
+
+
+    <style name="SanscriptTextView.Back">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.ExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.ExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.ExtraExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_extra_large</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.Large">
+        <item name="android:textSize">@dimen/default_text_size_large</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.Small">
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.Smaller">
+        <item name="android:textSize">@dimen/default_text_size_smaller</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.Smaller.Dp">
+        <item name="android:textSize">@dimen/default_text_size_smaller_dp</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.ExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_small</item>
+    </style>
+
+    <style name="SanscriptTextView.Back.ExtraExtraExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_small</item>
     </style>
 
 </resources>

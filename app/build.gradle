@@ -9,13 +9,27 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        splits {
+            density {
+                enable false
+                reset()
+                include "hdpi", "ldpi", "mdpi", "xhdpi", "xxhdpi", "xxxhdpi"
+            }
+        }
     }
+}
+
+
+repositories {
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
@@ -31,6 +45,12 @@ dependencies {
     implementation 'com.bigscreen:iconic-tab-bar:1.0.5'
     implementation "com.github.bumptech.glide:glide:${glide_version}"
     implementation 'com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
+    implementation 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.2@aar'
+    implementation 'com.ss.bottomnavigation:bottomnavigation:1.5.2'
+    implementation 'me.grantland:autofittextview:0.2.+'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

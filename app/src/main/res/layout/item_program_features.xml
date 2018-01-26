@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/windowBackground"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingRight="@dimen/padding_right"
+    >
+
+    <TextView
+        style="@style/SanscriptTextView.Back.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_program_features"
+        />
+
+    <TextView
+        style="@style/SanscriptTextView.Back.Smaller"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_title_program_features"
+        />
+
+    <TextView
+        style="@style/SanscriptTextView.Back.Small"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/program_feature_title_one"
+        />
+
+    <TextView
+        style="@style/SanscriptTextView.Back.Smaller"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/program_features_detail_one"
+        />
+
+    <TextView
+        style="@style/SanscriptTextView.Back.Small"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/program_features_two_title"
+        />
+
+    <TextView
+        style="@style/SanscriptTextView.Back.Smaller"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/program_features_two_detail"
+        />
+
+</LinearLayout>

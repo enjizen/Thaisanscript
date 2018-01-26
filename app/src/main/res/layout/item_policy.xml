@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_icon_diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_diamond" />
+
+        <TextView
+            android:id="@+id/tv_title_diamond"
+            style="@style/SanscriptTextView.Back.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_detail_diamond"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_detail_diamond"
+            android:text="@string/title_diamond" />
+
+        <TextView
+            android:id="@+id/tv_detail_diamond"
+            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_diamond"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_icon_diamond"
+            android:layout_toRightOf="@+id/image_icon_diamond"
+            android:text="@string/detail_diamond" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/image_icon_plane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_plane" />
+
+        <TextView
+            android:id="@+id/tv_title_plane"
+            style="@style/SanscriptTextView.Back.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_detail_plane"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_detail_plane"
+            android:text="@string/tv_title_plane" />
+
+        <TextView
+            android:id="@+id/tv_detail_plane"
+            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_plane"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_icon_plane"
+            android:layout_toRightOf="@+id/image_icon_plane"
+            android:text="@string/tv_sub_title_plane" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/image_icon_graduation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_graduation" />
+
+        <TextView
+            android:id="@+id/tv_title_graduation"
+            style="@style/SanscriptTextView.Back.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_detail_graduation"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_detail_graduation"
+            android:text="@string/tv_title_graduation" />
+
+        <TextView
+            android:id="@+id/tv_detail_graduation"
+            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_graduation"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_icon_graduation"
+            android:layout_toRightOf="@+id/image_icon_graduation"
+            android:text="@string/tv_sub_detail_graduation" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/image_icon_users"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_people"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_users"
+            style="@style/SanscriptTextView.Back.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_detail_users"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_detail_users"
+            android:text="@string/title_users" />
+
+        <TextView
+            android:id="@+id/tv_detail_users"
+            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_users"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_icon_users"
+            android:layout_toRightOf="@+id/image_icon_users"
+            android:text="@string/tv_title_detail_user" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/image_icon_cc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_creative_commons"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_cc"
+            style="@style/SanscriptTextView.Back.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_detail_cc"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_detail_cc"
+            android:text="@string/title_cc" />
+
+        <TextView
+            android:id="@+id/tv_detail_cc"
+            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_cc"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_icon_cc"
+            android:layout_toRightOf="@+id/image_icon_cc"
+            android:text="@string/title_detail_cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/image_icon_heart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_heart"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_heart"
+            style="@style/SanscriptTextView.Back.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_detail_heart"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_detail_heart"
+            android:text="พัฒนาด้วยใจ" />
+
+        <TextView
+            android:id="@+id/tv_detail_heart"
+            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_heart"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_icon_heart"
+            android:layout_toRightOf="@+id/image_icon_heart"
+            android:text="การสร้างสรรค์โปรแกรมนี้ ผู้พัฒนา พัฒนาขึ้นด้วยความเต็มใจ และตั้งใจทำให้สมบูรณ์ที่สุด" />
+    </RelativeLayout>
+
+
+</LinearLayout>

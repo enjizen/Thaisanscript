@@ -1,7 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/tools"
     tools:context="com.thai_sanscript.thaisanscript.fragment.MainFragment">
 
     <android.support.v4.widget.NestedScrollView
@@ -11,14 +13,85 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
-          <android.support.v7.widget.RecyclerView
-              android:id="@+id/recycleViewMain"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              tools:listitem="@layout/item_main_recycle_view"
-              />
+            <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+                android:id="@+id/recycleViewMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:rvp_singlePageFling="true"
+                app:rvp_triggerOffset="0.1"
+                tools:listitem="@layout/item_main_recycle_view" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycleViewMain"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/pending_right"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SanscriptTextView.Back.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/usage_policy"
+                    android:textStyle="bold" />
+
+                <me.grantland.widget.AutofitTextView
+                    style="@style/SanscriptTextView.Back.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_usage_policy"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    autofit:minTextSize="8sp"
+                    />
+
+
+                <include
+                    layout="@layout/item_policy"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                >
+            <include layout="@layout/item_program_features"/>
+
+                <TextView
+                    android:id="@+id/testExpandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="testExpandable"
+                    />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="1000"
+                    app:el_expanded="false"
+                    app:el_parallax="0.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Fixed height" />
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+            </LinearLayout>
 
         </RelativeLayout>
 

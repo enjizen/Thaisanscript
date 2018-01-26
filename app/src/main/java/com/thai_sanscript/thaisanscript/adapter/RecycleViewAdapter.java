@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.thai_sanscript.thaisanscript.R;
 import com.thai_sanscript.thaisanscript.model.TitleFirstViewModel;
+import com.thai_sanscript.thaisanscript.util.LogUtil;
 
 import java.util.List;
 
