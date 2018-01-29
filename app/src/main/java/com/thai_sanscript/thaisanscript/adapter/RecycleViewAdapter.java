@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.thai_sanscript.thaisanscript.R;
 import com.thai_sanscript.thaisanscript.model.TitleFirstViewModel;
-import com.thai_sanscript.thaisanscript.util.LogUtil;
 
 import java.util.List;
 
@@ -67,8 +66,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             super(itemView);
 
             imageView = itemView.findViewById(R.id.imageView);
-            tvTitle = itemView.findViewById(R.id.tv_title);
-            tvTitleDetail = itemView.findViewById(R.id.tv_title_detail);
+            tvTitle = itemView.findViewById(R.id.tv_scope_of_work_title);
+            tvTitleDetail = itemView.findViewById(R.id.tv_scope_of_work_title_detail);
             tvSubTitleDetail = itemView.findViewById(R.id.tv_subtitle_detail);
 
            // tvMessageDetail = itemView.findViewById(R.id.tv)

@@ -36,4 +36,10 @@
     <string name="program_features_detail_one">"   คือการ ปริวรรตอักษรแบบตรงตามรูปศัพท์เดิมโดยใช้เครื่องหมายอื่นๆ ร่วมกำกับด้วยเพื่อให้ถอดกลับเป็นอักษรโรมันหรืออักษรเทวนาครีได้ถูกต้อง คือการ ปริวรรตอักษรแบบตรงตามรูปศัพท์เดิมโดยใช้เครื่องหมายอื่นๆร่วมกำกับด้วย เพื่อให้ถอดกลับเป็นอักษรโรมันหรืออักษรเทวนาครีได้ถูกต้อง"</string>
     <string name="program_features_two_title">2.ปริวรรตอักษรแบบปรับรูป(ทั่วไป)</string>
     <string name="program_features_two_detail">"   โดยปรับให้เข้ากับอักขรวิธีไทย เพื่อให้รูปคำกลมกลืนกับภาษาไทย เพื่อความสะดวกในการอ่านสำหรับบุคคลทั่วไป แม้รูปแบบนี้จะใกล้เคียงกับการถอดเสียง (transcription) แต่การปริวรรตรูปแบบนี้ไม่ใช่การถอดเสียง ผู้ศึกษาควรศึกษาการออกเสียงเพิ่มเติม เพราะพยัญชนะจากการปริวรรตบางตัวออกเสียงไม่ตรงมาตรา"</string>
+    <string name="title_cc">ซอฟต์แวร์โอเพนซอร์ส</string>
+    <string name="title_detail_cc">อนุญาตให้ใช้ได้ตามสัญญาอนุญาตของครีเอทีฟคอมมอนส์แบบ</string>
+    <string name="tv_sub_detail_graduation">เป็นเครืองมือหนึ่งในช่วยการศึกษาค้นคว้าภาษาสันสกฤตในส่วนของการปริวรรต</string>
+    <string name="url_image_one">http://www.thai-sanscript.com/inc/images/slider/bg1.jpg</string>
+    <string name="url_image_two">http://www.thai-sanscript.com/inc/images/slider/bg2.jpg</string>
+    <string name="url_image_three">http://www.thai-sanscript.com/inc/images/slider/bg3.jpg</string>
 </resources>

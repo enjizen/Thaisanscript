@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.thai_sanscript.thaisanscript.R;
 import com.thai_sanscript.thaisanscript.adapter.RecycleViewAdapter;
 import com.thai_sanscript.thaisanscript.model.TitleFirstViewModel;
+import com.thai_sanscript.thaisanscript.view.ScopeOfWorkView;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
 
@@ -33,11 +34,14 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @BindView(R.id.recycleViewMain)
     RecyclerView recycleViewMain;
 
-    @BindView(R.id.testExpandable)
+    @BindView(R.id.scope_of_work_1)
+    ScopeOfWorkView scopeOfWorkView1;
+
+   /* @BindView(R.id.testExpandable)
     TextView testExpandable;
 
     @BindView(R.id.expandable_layout)
-    ExpandableLayout expandableLayout;
+    ExpandableLayout expandableLayout;*/
 
     private final String RECYCLE_VIEW_MAIN_POSITION = "Recycle View Main Position";
     private static final String POSITION = "position";
@@ -90,14 +94,15 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     }
 
     private void setUpListener() {
-        testExpandable.setOnClickListener(this);
-        expandableLayout.setOnClickListener(this);
+       /* testExpandable.setOnClickListener(this);
+        expandableLayout.setOnClickListener(this);*/
     }
 
     private void setUpViewData() {
         bindRecycleView();
         recycleViewAdapter.notifyDataSetChanged();
         recycleViewMain.scrollToPosition(getArguments().getInt(POSITION));
+
     }
 
 
@@ -175,10 +180,10 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+      /*  switch (v.getId()){
             case R.id.testExpandable:
                     expandableLayout.expand(true);
                 break;
-        }
+        }*/
     }
 }

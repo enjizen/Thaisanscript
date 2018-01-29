@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:autofit="http://schemas.android.com/tools"
     tools:context="com.thai_sanscript.thaisanscript.fragment.MainFragment">
 
     <android.support.v4.widget.NestedScrollView
@@ -13,8 +13,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
                 android:id="@+id/recycleViewMain"
@@ -31,9 +30,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/recycleViewMain"
                 android:layout_marginTop="16dp"
+                android:orientation="vertical"
                 android:paddingLeft="@dimen/padding_left"
-                android:paddingRight="@dimen/pending_right"
-                android:orientation="vertical">
+                android:paddingRight="@dimen/pending_right">
 
                 <TextView
                     style="@style/SanscriptTextView.Back.Large"
@@ -47,51 +46,43 @@
                     style="@style/SanscriptTextView.Back.Small"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/sub_usage_policy"
-                    android:textStyle="bold"
                     android:ellipsize="end"
                     android:maxLines="2"
-                    autofit:minTextSize="8sp"
-                    />
+                    android:text="@string/sub_usage_policy"
+                    android:textStyle="bold"
+                    autofit:minTextSize="8sp" />
 
 
-                <include
-                    layout="@layout/item_policy"/>
+                <include layout="@layout/item_policy" />
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/layout_program_features"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/layout1"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
-                >
-            <include layout="@layout/item_program_features"/>
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/testExpandable"
+                <include layout="@layout/item_program_features" />
+
+                <com.thai_sanscript.thaisanscript.view.ScopeOfWorkView
+                    android:id="@+id/scope_of_work_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="testExpandable"
-                    />
+                    android:layout_below="@id/layout_program_features"
+                    app:text="อาจมีข้อผิดพลาดจากพื้นฐานงาน " />
 
-                <net.cachapa.expandablelayout.ExpandableLayout
-                    android:id="@+id/expandable_layout"
+                <com.thai_sanscript.thaisanscript.view.ScopeOfWorkView
+                    android:id="@+id/scope_of_work_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:el_duration="1000"
-                    app:el_expanded="false"
-                    app:el_parallax="0.5">
+                    android:layout_below="@id/layout_program_features"
+                    app:text="อาจมีข้อผิดพลาดจากพื้นฐานงาน " />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:text="Fixed height" />
-
-                </net.cachapa.expandablelayout.ExpandableLayout>
             </LinearLayout>
+
 
         </RelativeLayout>
 

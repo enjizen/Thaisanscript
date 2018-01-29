@@ -2,7 +2,6 @@
     <string name="app_name">ไทย-สันสคริปท์</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_main_page">หน้าหลัก</string>
     <string name="menu_translate">ปริวรรต</string>
     <string name="menu_ex_translate">ตัวอย่างการปริวรรต</string>

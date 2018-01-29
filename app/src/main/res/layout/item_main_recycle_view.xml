@@ -24,7 +24,7 @@
         android:paddingRight="@dimen/padding_right_item_main_recycle_view">
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tv_scope_of_work_title"
             style="@style/SanscriptTextView.White.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_title_detail"
+            android:id="@+id/tv_scope_of_work_title_detail"
             style="@style/SanscriptTextView.White.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
