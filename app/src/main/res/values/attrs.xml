@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="scope_of_work">
-        <attr name="text" format="string"/>
-        <attr name="backgroundBack" format="boolean"/>
+        <attr name="textTitle" format="string"/>
+        <attr name="textContent" format="string"/>
+        <attr name="selected" format="boolean"/>
     </declare-styleable>
 </resources>

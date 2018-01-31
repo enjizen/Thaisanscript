@@ -2,13 +2,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingRight="@dimen/padding_right"
     tools:context="com.thai_sanscript.thaisanscript.fragment.TranslateFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/tvHello"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Translate" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvHello"
+            style="@style/SanscriptTextView.Back.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="เลือกชนิดตัวอักษรที่จะทำการปริวรรต"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/SanscriptTextView.Back.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/translate_sub_title" />
+
+    </LinearLayout>
 
 </RelativeLayout>

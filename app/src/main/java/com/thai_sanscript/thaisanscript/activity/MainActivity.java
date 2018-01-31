@@ -2,12 +2,14 @@ package com.thai_sanscript.thaisanscript.activity;
 
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.ss.bottomnavigation.BottomNavigation;
 import com.ss.bottomnavigation.events.OnSelectedItemChangeListener;
 import com.thai_sanscript.thaisanscript.R;
 import com.thai_sanscript.thaisanscript.fragment.MainFragment;
 import com.thai_sanscript.thaisanscript.fragment.TranslateFragment;
+import com.thai_sanscript.thaisanscript.util.LogUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,9 +19,14 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.bottom_navigation)
     BottomNavigation bottomNavigation;
 
+    private int selectedNumber;
+
+
+
 
     private final String TAG_MAIN_FRAGMENT = "MainFragment";
     private final String TAG_TRANSLATE_FRAGMENT = "TranslateFragment";
+    private final String SELECTED_NUMBER = "selected number";
     private boolean firstOpen = true;
 
     @Override
@@ -45,6 +52,10 @@ public class MainActivity extends BaseActivity {
                     .commit();
 
         }
+        else{
+            LogUtil.getInstance().i("MainActivity","Selected Number = " + selectedNumber);
+        }
+
 
 
         setListener();
@@ -65,7 +76,7 @@ public class MainActivity extends BaseActivity {
                         TranslateFragment translateFragment = (TranslateFragment) getSupportFragmentManager().findFragmentByTag(TAG_TRANSLATE_FRAGMENT);
 
                         if(!firstOpen) {
-
+                            selectedNumber = 0;
                             getSupportFragmentManager().beginTransaction()
                                     .attach(mainFragment)
                                     .detach(translateFragment)
@@ -74,6 +85,8 @@ public class MainActivity extends BaseActivity {
                         else{
                             firstOpen = false;
                         }
+
+
                         break;
                     case R.id.tab_translate:
 
@@ -85,6 +98,7 @@ public class MainActivity extends BaseActivity {
                                 .detach(mainFragment)
                                 .commit();
 
+                        selectedNumber = 1;
                         break;
                     case R.id.tab_article:
 
@@ -100,11 +114,17 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    /**********************
-     *
-     * Listener
-     *
-     **********************/
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        outState.putInt(SELECTED_NUMBER,selectedNumber);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        selectedNumber = savedInstanceState.getInt(SELECTED_NUMBER);
+    }
 }

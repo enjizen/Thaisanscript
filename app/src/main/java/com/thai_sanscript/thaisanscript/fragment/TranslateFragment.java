@@ -48,8 +48,6 @@ public class TranslateFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this,view);
 
-        tvHello.setText("Translate  ja");
-
 
     }
 }
