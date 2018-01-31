@@ -34,7 +34,7 @@
                 android:paddingRight="@dimen/pending_right">
 
                 <TextView
-                    style="@style/SanscriptTextView.Back.Large"
+                    style="@style/SanScript.Back.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -42,7 +42,7 @@
                     android:textStyle="bold" />
 
                 <me.grantland.widget.AutofitTextView
-                    style="@style/SanscriptTextView.Back.Small"
+                    style="@style/SanScript.Back.Small"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"

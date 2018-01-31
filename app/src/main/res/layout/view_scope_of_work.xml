@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/title_scope_of_work"
-        style="@style/SanscriptTextView.White.Small"
+        style="@style/SanScript.White.Small"
         android:background="@android:color/black"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -46,7 +46,7 @@
 
     <TextView
         android:id="@+id/detail_scope_of_work"
-        style="@style/SanscriptTextView.DarkGrey.Small"
+        style="@style/SanScript.DarkGrey.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_background"

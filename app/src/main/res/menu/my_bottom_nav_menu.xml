@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/item_main"
+		android:icon="@drawable/ic_home_color_primary_24dp"
+		android:title="@string/menu_main_page"/>
+	<item
+		android:id="@+id/item_translate"
+		android:icon="@drawable/ic_translate_color_primary_24dp"
+		android:title="@string/menu_translate"/>
+
+	<item
+		android:id="@+id/item_more"
+		android:icon="@drawable/ic_more_color_primary_24dp"
+		android:title="@string/menu_more"/>
+	
+</menu>

@@ -2,31 +2,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="@dimen/padding_left"
     android:paddingRight="@dimen/padding_right"
     tools:context="com.thai_sanscript.thaisanscript.fragment.TranslateFragment">
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:gravity="center"
         >
 
         <TextView
             android:id="@+id/tvHello"
-            style="@style/SanscriptTextView.Back.Large"
+            style="@style/SanScript.Back.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="เลือกชนิดตัวอักษรที่จะทำการปริวรรต"
+            android:text="@string/translate_title"
             android:textStyle="bold" />
 
         <TextView
-            style="@style/SanscriptTextView.Back.Smaller"
+            style="@style/SanScript.Back.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/translate_sub_title" />
 
+
+        <TextView
+            style="@style/SanScript.Back.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/original_text"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_source_type"
+            style="@style/SanScript.Back.Small"
+            android:background="@drawable/bg_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            style="@style/SanScript.Back.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/other_comparative_characters"
+            />
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_destination_type"
+            style="@style/SanScript.Back.Small"
+            android:background="@drawable/bg_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            style="@style/SanScript.Back.Smaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/language_text"
+            />
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_lang"
+            style="@style/SanScript.Back.Small"
+            android:background="@drawable/bg_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_text"
+            style="@style/SanScript"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_edittext"
+            />
+
+
+
+        <Button
+            style="@style/SanScriptButton.blueSea"
+            android:layout_marginTop="@dimen/default_margin_padding_large"
+            android:layout_marginBottom="@dimen/default_margin_padding_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปริวรรต เป็น ไทย-สันสกฤต"
+            />
     </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </RelativeLayout>

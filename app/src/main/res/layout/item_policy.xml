@@ -20,7 +20,7 @@
 
         <TextView
             android:id="@+id/tv_title_diamond"
-            style="@style/SanscriptTextView.Back.Small"
+            style="@style/SanScript.Back.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_detail_diamond"
@@ -30,7 +30,7 @@
 
         <TextView
             android:id="@+id/tv_detail_diamond"
-            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            style="@style/SanScript.DarkGrey.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_title_diamond"
@@ -57,7 +57,7 @@
 
         <TextView
             android:id="@+id/tv_title_plane"
-            style="@style/SanscriptTextView.Back.Small"
+            style="@style/SanScript.Back.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_detail_plane"
@@ -67,7 +67,7 @@
 
         <TextView
             android:id="@+id/tv_detail_plane"
-            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            style="@style/SanScript.DarkGrey.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_title_plane"
@@ -93,7 +93,7 @@
 
         <TextView
             android:id="@+id/tv_title_graduation"
-            style="@style/SanscriptTextView.Back.Small"
+            style="@style/SanScript.Back.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_detail_graduation"
@@ -103,7 +103,7 @@
 
         <TextView
             android:id="@+id/tv_detail_graduation"
-            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            style="@style/SanScript.DarkGrey.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_title_graduation"
@@ -132,7 +132,7 @@
 
         <TextView
             android:id="@+id/tv_title_users"
-            style="@style/SanscriptTextView.Back.Small"
+            style="@style/SanScript.Back.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_detail_users"
@@ -142,7 +142,7 @@
 
         <TextView
             android:id="@+id/tv_detail_users"
-            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            style="@style/SanScript.DarkGrey.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_title_users"
@@ -169,7 +169,7 @@
 
         <TextView
             android:id="@+id/tv_title_cc"
-            style="@style/SanscriptTextView.Back.Small"
+            style="@style/SanScript.Back.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_detail_cc"
@@ -179,7 +179,7 @@
 
         <TextView
             android:id="@+id/tv_detail_cc"
-            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            style="@style/SanScript.DarkGrey.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_title_cc"
@@ -206,7 +206,7 @@
 
         <TextView
             android:id="@+id/tv_title_heart"
-            style="@style/SanscriptTextView.Back.Small"
+            style="@style/SanScript.Back.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_detail_heart"
@@ -216,7 +216,7 @@
 
         <TextView
             android:id="@+id/tv_detail_heart"
-            style="@style/SanscriptTextView.DarkGrey.Smaller"
+            style="@style/SanScript.DarkGrey.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_title_heart"

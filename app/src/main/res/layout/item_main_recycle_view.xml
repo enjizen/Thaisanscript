@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/tv_scope_of_work_title"
-            style="@style/SanscriptTextView.White.Large"
+            style="@style/SanScript.White.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -34,7 +34,7 @@
 
         <TextView
             android:id="@+id/tv_scope_of_work_title_detail"
-            style="@style/SanscriptTextView.White.Small"
+            style="@style/SanScript.White.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -43,7 +43,7 @@
 
         <TextView
             android:id="@+id/tv_subtitle_detail"
-            style="@style/SanscriptTextView.White.Smaller"
+            style="@style/SanScript.White.Smaller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"

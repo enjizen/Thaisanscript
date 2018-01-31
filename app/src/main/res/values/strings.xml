@@ -52,4 +52,45 @@
 
     <string name="translate_sub_title">"   เมื่อคุณเลือกชนิดตัวอักษรแล้ว คุณสามารถดูตารางเปรียบเทียบการปริวรรตอักษรด้านล่าง [ดูตารางเปรียบเทียบอักษร]
 เลือกตัวอักษรต้นฉบับ กรอกอักษรที่เป็นชนิดตัวอักษรที่เลือกไว้ แล้วเลือกตัวอักษรเปรียบเทียบอื่นๆ จากนั้น กดปุ่ม "ปริวรรต เป็น ไทย-สันสกฤต" เพื่อดูผลลัพธ์"</string>
+    <string name="translate_title">เลือกชนิดตัวอักษรที่จะทำการปริวรรต</string>
+    <string name="drop_down_name_uae">อุษาคเนย์</string>
+    <string name="drop_down_name_thai_traditional">ไทย-คงรูป(แบบแผน)</string>
+    <string name="drop_down_name_myanmar">พม่า (က)</string>
+    <string name="drop_down_name_india">อินเดีย</string>
+    <string name="drop_down_name_devanagari">เทวนาครี (अ)</string>
+    <string name="drop_down_name_bengali">เบงกาลี (অ)</string>
+    <string name="drop_down_name_kurum">คุรมุขี (ਅ)</string>
+    <string name="drop_down_name_gujarati">คุชราตี (અ)</string>
+    <string name="drop_down_name_oriya">โอริยา (ଅ)</string>
+    <string name="drop_down_name_tamil">ทมิฬ (அ)</string>
+    <string name="drop_down_name_telugu">เตลูกู (అ)</string>
+    <string name="drop_down_name_kannada">กันนาดา (ಅ)</string>
+    <string name="drop_down_name_malayalam">มาลายัม (അ)</string>
+    <string name="drop_down_name_roman">โรมัน</string>
+    <string name="drop_down_name_roman_iast">โรมัน IAST</string>
+    <string name="drop_down_name_roman_kolkata">โรมัน Kolkata</string>
+    <string name="drop_down_name_roman_itrans">โรมัน ITRANS</string>
+    <string name="drop_down_name_roman_harvard_kyoto">โรมัน Harvard-Kyoto</string>
+    <string name="drop_down_name_roman_slp">โรมัน SLP</string>
+    <string name="drop_down_name_roman_test">โรมัน ทดสอบ</string>
+    <string name="drop_down_value_thai">thai</string>
+    <string name="drop_down_value_burmese">burmese</string>
+    <string name="drop_down_value_devanagari">devanagari</string>
+    <string name="drop_down_value_bengali">bengali</string>
+    <string name="drop_down_value_gurmukhi">gurmukhi</string>
+    <string name="drop_down_value_gujarati">gujarati</string>
+    <string name="drop_down_value_oriya">oriya</string>
+    <string name="drop_down_value_tamil">tamil</string>
+    <string name="drop_down_value_telugu">telugu</string>
+    <string name="drop_down_value_kannada">kannada</string>
+    <string name="drop_down_value_malayalam">malayalam</string>
+    <string name="drop_down_value_roman_iast">iast</string>
+    <string name="drop_down_value_kolkata">kolkata</string>
+    <string name="drop_down_value_roman_itrans">itrans</string>
+    <string name="drop_down_value_roman_harvard_kyoto">hk</string>
+    <string name="drop_down_value_roman_slp">slp1</string>
+    <string name="drop_down_value_roman_iast_test">iasttest</string>
+    <string name="original_text">ตัวอักษรต้นฉบับ</string>
+    <string name="other_comparative_characters">ตัวอักษรเปรียบเทียบอื่นๆ</string>
+    <string name="language_text">ข้อความภาษา</string>
 </resources>

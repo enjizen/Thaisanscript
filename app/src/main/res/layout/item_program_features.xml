@@ -8,41 +8,41 @@
     android:paddingRight="@dimen/padding_right">
 
     <TextView
-        style="@style/SanscriptTextView.Back.Large"
+        style="@style/SanScript.Back.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_program_features" />
 
     <TextView
-        style="@style/SanscriptTextView.Back.Smaller"
+        style="@style/SanScript.Back.Smaller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/sub_title_program_features" />
 
     <TextView
-        style="@style/SanscriptTextView.Back.Small"
+        style="@style/SanScript.Back.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/program_feature_title_one" />
 
     <TextView
-        style="@style/SanscriptTextView.Back.Smaller"
+        style="@style/SanScript.Back.Smaller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:text="@string/program_features_detail_one" />
 
     <TextView
-        style="@style/SanscriptTextView.Back.Small"
+        style="@style/SanScript.Back.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/program_features_two_title" />
 
     <TextView
-        style="@style/SanscriptTextView.Back.Smaller"
+        style="@style/SanScript.Back.Smaller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -50,7 +50,7 @@
 
 
     <TextView
-        style="@style/SanscriptTextView.Back.Large"
+        style="@style/SanScript.Back.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

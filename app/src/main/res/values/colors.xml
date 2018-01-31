@@ -4,17 +4,30 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="bottom_nav_item_color">#FF4081</color>
 
     <color name="white">#fff</color>
     <color name="dark_grey">#cc4b4b4b</color>
     <color name="windowBackground">#f4f4f4</color>
 
-    <color name="light_blue">#90caf9</color>
+    <color name="blue_sea">#90caf9</color>
+    <color name="blue_sea2">#2D8ACC</color>
     <color name="black">#000000</color>
 
-    <color name="unselectedIconColor">#aaa</color>
+    <color name="grey">#aaa</color>
     <color name="icon_main_content">#cc4444</color>
     <color name="white_smoke">#F2F2F2</color>
     <color name="red">#FF0000</color>
+
+    <color name="button_text">@color/white</color>
+    <color name="button_outline_text">@color/grey</color>
+
+    <color name="green_line">#00c402</color>
+    <color name="green_line_light">#35ff89</color>
+    <color name="green_line_strong">#009c02</color>
+
+    <color name="button_green_line_normal">@color/green_line</color>
+    <color name="button_green_line_pressed">@color/green_line_strong</color>
+    <color name="button_green_line_disable">@color/grey</color>
+    <color name="yellow">#f9a825</color>
+
 </resources>

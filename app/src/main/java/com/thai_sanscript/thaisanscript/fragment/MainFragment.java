@@ -9,14 +9,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.thai_sanscript.thaisanscript.R;
 import com.thai_sanscript.thaisanscript.adapter.RecycleViewAdapter;
 import com.thai_sanscript.thaisanscript.model.TitleFirstViewModel;
 import com.thai_sanscript.thaisanscript.view.ScopeOfWorkView;
-
-import net.cachapa.expandablelayout.ExpandableLayout;
 
 import java.util.ArrayList;
 import java.util.List;

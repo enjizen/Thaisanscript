@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.thai_sanscript.thaisanscript.R;
 
+import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -20,12 +21,12 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("Sri Sury Wongse.otf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
+
     }
 
     @Override
