@@ -1,6 +1,7 @@
 package com.thai_sanscript.thaisanscript.util;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.widget.TextView;
@@ -37,6 +38,7 @@ public class BackgroundUtil {
             textView.setBackground(drawable);
         }
     }
+
 
     public void setViewBackground(Drawable drawable, ToggleButton toggleButton){
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {

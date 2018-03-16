@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class HttpManager {
 
-    private static final String baseUrl = "http://203.154.255.55:8080/tipinsuranceAPI-3.0/";
+    private static final String baseUrl = "http://www.thai-sanscript.com/index.php/";
     private static final String dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ";
 
     private static HttpManager instance;
@@ -33,7 +33,7 @@ public class HttpManager {
         Retrofit retrofit = new Retrofit.Builder()
                                 .baseUrl(baseUrl)
                                 .addConverterFactory(GsonConverterFactory.create(gson))
-                                .client(NetworkClient.getInstance().getUnsafeOkHttpClient())
+                                .client(NetworkClient.getInstance().unsafeOkHttpClient())
                                 .build();
 
         service = retrofit.create(ApiService.class);

@@ -70,7 +70,6 @@
                     android:id="@+id/scope_of_work_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/layout_program_features"
                     app:textContent="@string/detail_scope_of_work_1"
                     app:textTitle="@string/title_scope_of_work_1" />
 
@@ -78,7 +77,6 @@
                     android:id="@+id/scope_of_work_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/layout_program_features"
                     app:textContent="@string/detail_scope_of_work_2"
                     app:textTitle="@string/title_scope_of_work_2" />
 
@@ -86,7 +84,6 @@
                     android:id="@+id/scope_of_work_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/layout_program_features"
                     app:textContent="@string/detail_scope_of_work_3"
                     app:textTitle="@string/title_scope_of_work_3" />
 

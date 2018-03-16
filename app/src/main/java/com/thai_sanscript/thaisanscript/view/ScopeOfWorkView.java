@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.v7.content.res.AppCompatResources;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Animation;
@@ -32,7 +33,7 @@ public class ScopeOfWorkView extends BaseCustomViewGroup {
 
     private TextView scopeOfWorkDetail;
     private TextView titleScopeOfWork;
-    private ToggleButton toggleButton;
+    private ImageView toggleButton;
     private ImageView imageBackgroundView;
     private Animation slideUp;
 
@@ -84,12 +85,14 @@ public class ScopeOfWorkView extends BaseCustomViewGroup {
         toggleButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(toggleButton.isChecked()){
-                    setSelected(true);
-                }
-                else {
-                    setSelected(false);
-                }
+               if(selected){
+                   selected = false;
+                   setSelected(selected);
+               }
+               else{
+                   selected = true;
+                   setSelected(selected);
+               }
             }
         });
 
@@ -140,8 +143,7 @@ public class ScopeOfWorkView extends BaseCustomViewGroup {
         if(isSelected) {
             titleScopeOfWork.setBackgroundColor(getResources().getColor(R.color.black));
             imageBackgroundView.setBackgroundColor(getResources().getColor(R.color.red));
-            toggleButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_arrow_white));
-            toggleButton.setChecked(true);
+            toggleButton.setImageResource(R.drawable.ic_arrow_white);
 
             scopeOfWorkDetail.startAnimation(slideUp);
             scopeOfWorkDetail.setVisibility(View.VISIBLE);
@@ -150,8 +152,7 @@ public class ScopeOfWorkView extends BaseCustomViewGroup {
         else{
             titleScopeOfWork.setBackgroundColor(getResources().getColor(R.color.dark_grey));
             imageBackgroundView.setBackgroundColor(getResources().getColor(R.color.dark_grey));
-            toggleButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_arrow_black));
-            toggleButton.setChecked(false);
+            toggleButton.setImageResource(R.drawable.ic_arrow_black);
             scopeOfWorkDetail.startAnimation(slideUp);
             scopeOfWorkDetail.setVisibility(View.GONE);
         }

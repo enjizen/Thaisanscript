@@ -31,8 +31,8 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @BindView(R.id.recycleViewMain)
     RecyclerView recycleViewMain;
 
-    @BindView(R.id.scope_of_work_1)
-    ScopeOfWorkView scopeOfWorkView1;
+    /*@BindView(R.id.scope_of_work_1)
+    ScopeOfWorkView scopeOfWorkView1;*/
 
    /* @BindView(R.id.testExpandable)
     TextView testExpandable;

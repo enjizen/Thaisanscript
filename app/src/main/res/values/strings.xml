@@ -93,4 +93,5 @@
     <string name="original_text">ตัวอักษรต้นฉบับ</string>
     <string name="other_comparative_characters">ตัวอักษรเปรียบเทียบอื่นๆ</string>
     <string name="language_text">ข้อความภาษา</string>
+    <string name="btn_exchange">ปริวรรต เป็น ไทย-สันสกฤต</string>
 </resources>

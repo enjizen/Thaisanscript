@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.thai_sanscript.thaisanscript.R;
@@ -25,7 +26,7 @@ import butterknife.ButterKnife;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TranslateFragment extends Fragment {
+public class TranslateFragment extends BaseFragment {
 
     @BindView(R.id.tvHello)
     TextView tvHello;
@@ -38,6 +39,9 @@ public class TranslateFragment extends Fragment {
 
     @BindView(R.id.spinner_lang)
     AppCompatSpinner spinnerLang;
+
+    @BindView(R.id.btn_exchange)
+    Button btnExchange;
 
     private List<DropDownModel> dropDownSourceTypeList = new ArrayList<>();
     private List<DropDownModel> dropDownDestinationTypeList = new ArrayList<>();
@@ -335,6 +339,13 @@ public class TranslateFragment extends Fragment {
         spinnerSourceType.setOnItemSelectedListener(sourceTypeListener);
         spinnerDestinationType.setOnItemSelectedListener(destinationType);
         spinnerLang.setOnItemSelectedListener(langListener);
+
+        btnExchange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getApiService().getProvince("ทดสอบ","sans");
+            }
+        });
     }
 
     /***********************

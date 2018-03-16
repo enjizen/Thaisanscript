@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/title_scope_of_work"
@@ -29,9 +29,9 @@
             android:id="@+id/image_background_view"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@android:color/holo_red_dark"
+            android:background="@color/red"
             />
-
+<!--
         <ToggleButton
             android:id="@+id/toggle_button"
             android:layout_width="40dp"
@@ -41,7 +41,17 @@
             android:background="@drawable/ic_arrow_white"
             android:textOff=""
             android:textOn=""
-            />
+            />-->
+
+           <ImageButton
+               android:id="@+id/toggle_button"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginTop="3dp"
+               android:layout_marginLeft="4dp"
+               android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_arrow_white"
+               />
     </RelativeLayout>
 
     <TextView

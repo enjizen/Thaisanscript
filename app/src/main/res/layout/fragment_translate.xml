@@ -97,12 +97,13 @@
 
 
         <Button
+            android:id="@+id/btn_exchange"
             style="@style/SanScriptButton.blueSea"
             android:layout_marginTop="@dimen/default_margin_padding_large"
             android:layout_marginBottom="@dimen/default_margin_padding_large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ปริวรรต เป็น ไทย-สันสกฤต"
+            android:text="@string/btn_exchange"
             />
     </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

@@ -1,8 +1,5 @@
 package com.thai_sanscript.thaisanscript.manager.http;
 
-import android.content.Context;
-
-import com.thai_sanscript.thaisanscript.manager.Contextor;
 
 import java.security.cert.CertificateException;
 import java.util.concurrent.TimeUnit;
@@ -23,6 +20,8 @@ import okhttp3.OkHttpClient;
 public class NetworkClient {
 
     private static NetworkClient instance;
+    private static final int connectTimeout  = 120;
+    private static final int readTimeout = 120;
 
     public static NetworkClient getInstance() {
         if (instance == null)
@@ -35,7 +34,7 @@ public class NetworkClient {
 
     }
 
-    public  OkHttpClient getUnsafeOkHttpClient() {
+    public  OkHttpClient unsafeOkHttpClient() {
         try {
             // Create a trust manager that does not validate certificate chains
             final TrustManager[] trustAllCerts = new TrustManager[] {
@@ -62,18 +61,18 @@ public class NetworkClient {
             final SSLSocketFactory sslSocketFactory = sslContext.getSocketFactory();
 
             OkHttpClient.Builder builder = new OkHttpClient.Builder();
-            builder.sslSocketFactory(sslSocketFactory);
+            builder.sslSocketFactory(sslSocketFactory,(X509TrustManager)trustAllCerts[0]);
             builder.hostnameVerifier(new HostnameVerifier() {
                 @Override
                 public boolean verify(String hostname, SSLSession session) {
                     return true;
                 }
             });
-            builder.connectTimeout(120, TimeUnit.SECONDS);
-            builder.readTimeout(120, TimeUnit.SECONDS);
+            builder.connectTimeout(connectTimeout, TimeUnit.SECONDS);
+            builder.readTimeout(readTimeout, TimeUnit.SECONDS);
             return builder.build();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            return null;
         }
     }
 

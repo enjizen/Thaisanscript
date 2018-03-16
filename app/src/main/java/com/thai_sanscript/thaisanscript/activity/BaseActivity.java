@@ -15,14 +15,14 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * Created by streami.t.mobiledeveloper1 on 24/1/2018 AD.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("Sri Sury Wongse.otf")
+                .setDefaultFontPath("font/Sri Sury Wongse.otf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
