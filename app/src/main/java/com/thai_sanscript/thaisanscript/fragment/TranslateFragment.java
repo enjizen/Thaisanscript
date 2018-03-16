@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.thai_sanscript.thaisanscript.R;
 import com.thai_sanscript.thaisanscript.model.DropDownModel;
 import com.thai_sanscript.thaisanscript.adapter.SpinnerWordAdapter;
-import com.thai_sanscript.thaisanscript.util.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -343,7 +342,7 @@ public class TranslateFragment extends BaseFragment {
         btnExchange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getApiService().getProvince("ทดสอบ","sans");
+                getApiService().getTransliteration("ทดสอบ","sans");
             }
         });
     }

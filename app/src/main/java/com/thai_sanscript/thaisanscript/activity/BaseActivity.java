@@ -12,7 +12,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
- * Created by streami.t.mobiledeveloper1 on 24/1/2018 AD.
+ * Created by Wanchalerm Yuphasuk on 24/1/2018 AD.
  */
 
 public class BaseActivity extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("font/Sri Sury Wongse.otf")
+                .setDefaultFontPath(getString(R.string.font))
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );

@@ -45,7 +45,7 @@ public class CallApiServiceManager {
         this.apiService = HttpManager.getInstance().getService();
     }
 
-    public void getProvince(String scrTxt, String lang){
+    public void getTransliteration(String scrTxt, String lang){
          LogUtil.getInstance().i("dddd","dddddd");
         apiService.transliteration(scrTxt,lang).enqueue(new Callback<List<String>>() {
             @Override
